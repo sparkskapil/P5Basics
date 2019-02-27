@@ -24,14 +24,6 @@ function setup() {
 
 
 function keyPressed() {
-  jump();
-}
-
-function mousePressed() {
-  jump();
-}
-
-function jump(){
   if(gameOver == false)
    freeze = false;
   else
@@ -39,6 +31,16 @@ function jump(){
   force = createVector(0,-10);
   Brick.applyForce(force);
 }
+
+function mousePressed() {
+  if(gameOver == false)
+   freeze = false;
+  else
+    setup();
+  force = createVector(0,-10);
+  Brick.applyForce(force);
+}
+
 
 function draw() {
 	background(65);

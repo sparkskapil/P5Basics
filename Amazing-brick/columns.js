@@ -1,7 +1,7 @@
 
 hurdle = function(){
 
-    this.width = 50;
+    this.width = 20;
 	this.pos = createVector(width-this.width,0);
 	this.vel = createVector(-1.5,0);
     this.height = floor(random(1,8))*50;
